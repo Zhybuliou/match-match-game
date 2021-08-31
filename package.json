@@ -1,7 +1,7 @@
 {
   "name": "zhybuliou-2021q1",
   "scripts": {
-    "build": "webpack watch",
+    "build": "webpack",
     "dev": "webpack server --env development",
     "lint": "eslint src",
     "prettier": "prettier src"
