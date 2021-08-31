@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$bodyColor: #fff;
+$navColor: #2196F3;
+@import './Components/nav/nav.scss';
+@import './Components/popups/popupWin.scss';
+@import './Components/popups/popup.scss';
+@import './Components/indexedDB/indexedDB.scss';
+@import './Components/game/game.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+
+    font-size: 20px;
+  }
+::-webkit-scrollbar {
+    width: 0px;
+
+    background: transparent;
+      }
+
+body {
+  box-sizing: content-box;
+
+  background-color: $bodyColor;
+}
+
+.page-about{
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 30px;
+
+  width: 1000px;
+  height: auto;
+  border-radius: 5px;
+
+  background-color: #ccc;
+}
+.page-about__header{
+display: flex;
+align-items: center;
+margin: 1px 0px;
+mix-blend-mode: normal;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.15px;
+color: rgba(0, 0, 0, 0.87);
+}
+.page-about__step1{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 800px;
+}
+.page-about__step1-description{
+  display: flex;
+  padding: 10px;
+
+  width: 320px;
+  height: 230px;
+
+  background-color: #fff;
+}
+.page-about__step1-description img{
+  width: 40px;
+  height: 40px;
+}
+.page-about__step1-image{
+  width: 320px;
+  height: 218px;
+
+  background-image: url(/src/assets/step1-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-about__step2-description{
+  display: flex;
+  padding: 10px;
+
+  width: 320px;
+  height: 132px;
+
+  background-color: #fff;
+}
+.page-about__step2-description img{
+  width: 40px;
+  height: 40px;
+}
+.page-about__step2-image{
+  width: 116px;
+  height: 73px;
+
+  background-image: url(/src/assets/step2-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-about__step3-image{
+  width: 320px;
+  height: 230px;
+
+  background-image: url(/src/assets/step3-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-style{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.page-setting{
+  margin: 20px auto 0px auto;
+
+  width: 1000px;
+  height: 252px;
+  border-radius: 5px;
+
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.page-setting__title{
+  margin-top: 30px;
+  margin-left: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.custom-select{
+  margin-left: 30px;
+  margin-bottom: 40px;
+
+  width: 256px;
+  border-bottom: solid 1px black;
+}
+.setting-select{
+  display: flex;
+  align-items: center;
+
+  width:256px;
+  height: 50px;
+  border: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+

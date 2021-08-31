@@ -1,0 +1,37 @@
+.score-avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-image: url('/src/assets/avatar.png');
+  background-color: #fff;
+}
+.score-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+
+  width: 1000px;
+
+  list-style-type: none;
+}
+.score-left-block{
+  display: flex;
+}
+.score-info{
+  margin-left: 10px;
+}
+.score-right-block{
+  display: flex;
+}
+.score-point{
+  margin-left: 10px;
+
+  color:#2196F3;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .25px;
+}

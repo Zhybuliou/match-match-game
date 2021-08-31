@@ -1,0 +1,268 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+
+  width: 639px;
+  height: 420px;
+  border: 1px solid #888;
+
+  background-color: #fefefe;
+}
+
+.close {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  position: absolute;
+  left: 520px;
+  top: 340px;
+
+  width: 90px;
+  height: 16px;
+
+  background: #E3F2FD;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #2196F3;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+.modal-title__h6{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.fname,
+.lname,
+.e-mail{
+  padding-left: 50px;
+  margin-bottom: 20px;
+
+  width: 250px;
+  height: 65px;
+
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+
+  background-color: #E9E9E9;
+}
+.label-fname{
+  position: absolute;
+  top: 25px;
+  left: 7.85%;
+  z-index: 1;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.38);
+  opacity: 1;
+}
+.label-lname{
+  position: absolute;
+  top: 135px;
+  left: 7.85%;
+  z-index: 1;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.38);
+  opacity: 1;
+}
+.label-mail{
+  position: absolute;
+  top: 245px;
+  left: 7.85%;
+  z-index: 1;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.38);
+  opacity: 1;
+}
+.modal-form{
+  position: relative;
+}
+.submit{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 16px;
+position: absolute;
+left: 402px;
+top: 340px;
+
+width: 108px;
+height: 36px;
+
+background: #2196F3;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+border-radius: 4px;
+color: #fff;
+cursor: pointer;
+}
+.form-image{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.avatar{
+  border-radius: 50%;
+  background-size: cover;
+}
+.pictureAvatarCross {
+    position: absolute;
+    left: 400px;
+    top: 39px;
+
+    z-index: 1;
+    opacity: 0;
+
+    cursor: pointer;
+    font-size: 239px;
+    transition: 0.3s;
+}
+.pictureAvatarCross:hover{
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.pictureTest {
+  position: absolute;
+
+  opacity: 0;
+  z-index: -1;
+}
+.modalWin {
+  display: visible;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.update-email {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 237px;
+  left: 240px;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, .2);
+  color: rgba(255, 255, 255, 1);
+  font-size: 55px;
+  font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+  transition: all .2s ease-out;
+}
+.update-fname {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 20px;
+  left: 240px;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, .2);
+  color: rgba(255, 255, 255, 1);
+  font-size: 55px;
+  font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+  transition: all .2s ease-out;
+}
+.update-name {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 130px;
+  left: 240px;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, .2);
+  color: rgba(255, 255, 255, 1);
+  font-size: 55px;
+  font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+  transition: all .2s ease-out;
+}
+.failure {
+  background: rgba(255, 0, 0, .6);
+}
+.success {
+  background: rgba(0, 255, 0, .6);
+}

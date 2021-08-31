@@ -1,0 +1,73 @@
+// game style //
+.page-game{
+  margin: 0 auto;
+
+  width: 1000px;
+
+  background-color: #ccc;
+}
+.grid{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 500px;
+  perspective: 1000px;
+}
+.card-style{
+  margin: 5px;
+
+  height: calc(33.333% - 10px);
+
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+.card{
+  width: calc(25% - 10px);
+}
+.card-six{
+  width: calc(16% - 10px);
+}
+.card-eight{
+  width: calc(12.5% - 10px);
+}
+.flip {
+  transform: rotateY(180deg);
+}
+.timer{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 256px;
+  height: 64px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 30px;
+
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.disable{
+  display: none;
+}
+.disabled{
+  pointer-events: none;
+}
+// top score table style //
+.won{
+  background-color: rgba(126, 228, 135, 0.685);
+}
+.loose {
+  background-color: rgba(255, 60, 0, 0.568);
+}
